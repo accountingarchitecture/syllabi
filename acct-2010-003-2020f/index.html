@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Syllabus</title>
+  <meta name="Author" content="Joshua G. Coyne, PhD">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="icon" href="memphis.ico" type="image/x-icon" sizes="32x32">
+  <style>
+    /********** Eric Meyer's Reset CSS v2.0 **********/
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+    body {
+      line-height: 1;
+    }
+    ol, ul {
+      list-style: none;
+    }
+    blockquote, q {
+      quotes: none;
+    }
+    blockquote:before, blockquote:after, q:before, q:after {
+      content: '';
+      content: none;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    /********** Set Default HTML Tags ***********/
+    b, strong {
+      font-weight: bold;
+    }
+    i, em {
+      font-style: italic;
+    }
+    ol {
+      list-style-type: decimal;
+    }
+    ul {
+      list-style-type: disc;
+    }
+    a {
+      word-wrap: break-word;
+      text-decoration: none;
+    }
+
+    /********** Set Custom HTML Tags **********/
+    body {
+      font: 16px/19px "Arial", Arial, sans-serif;
+      color: #333;
+      height: 100%;
+      width: 100%;
+      text-align: justify;
+    }
+    header {
+      text-align: center;
+      font-weight: bold;
+      padding-bottom: 20px;
+    }
+    :target {
+      background-color: rgba(0,255,0,.15);
+      padding: 10px;
+      margin-left: -10px;
+      margin-right: -10px;
+      box-shadow: 0 0 7px rgba(0,0,0,0.1);
+    }
+    section {
+      border-bottom: 1px solid dimgray;
+      margin-top: 10px;
+      padding-bottom: 20px;
+    }
+    h2 {
+      font-size: 19px;
+      line-height: 27px;
+      font-weight: bold;
+      padding-bottom: 15px;
+    }
+    h3 {
+      font-size: 17px;
+      line-height: 27px;
+      font-weight: bold;
+      padding-bottom: 5px;
+    }
+    h4 {
+      font-style: italic;
+      text-decoration: underline;
+    }
+    p {
+      padding-bottom: 10px;
+    }
+    ol {
+      margin-left: 35px;
+      padding-bottom: 10px;
+    }
+    ul {
+      margin-left: 45px;
+      padding-bottom: 10px;
+    }
+    li {
+      padding-bottom: 5px;
+    }
+    li > ol, li > ul {
+      margin-top: 5px;
+      padding-bottom: 0;
+      margin-bottom: -5px;
+    }
+    dl {
+      margin-left: 10px;
+    }
+    dt {
+      font-style: italic;
+    }
+    dd {
+      padding-bottom: 10px;
+      margin-left: 5px;
+    }
+    blockquote {
+      font-style: italic;
+      margin-left: 20px;
+      text-indent: 0;
+      line-height: 23px;
+    }
+
+    /********** Create Style Classes **********/
+    #syllabus {
+      width: 92%;
+      margin: 20px auto;
+    }
+    .letterhead {
+      padding-bottom: 30px;
+    }
+    .table {
+      display: table;
+      table-layout: fixed;
+      padding-bottom: 5px;
+    }
+    .table.bordered {
+      padding-bottom: 15px;
+    }
+    .table.bordered > .row > .cell {
+      border: 2px ridge #eee;
+      padding: 4px 2px;
+    }
+    .row {
+      display: table-row;
+    }
+    .row.header, .row.footer {
+      font-weight: bold;
+    }
+    .cell {
+      display: table-cell;
+    }
+    .cell:first-child {
+      padding-right: 30px;
+    }
+    .cell.centered, .row.centered > .cell {
+      text-align: center;
+      padding-right: initial;
+    }
+    .code {
+      font-weight: bold;
+      font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+    }
+    /********** Media Queries **********/
+    @media screen {
+      body {
+        overflow: auto;
+      }
+      a[target="_blank"]::after {
+        background-image: url('external-link.png');
+        background-size: 13px 13px;
+        display: inline-block;
+        width: 13px;
+        height: 12px;
+        content: "";
+      }
+    }
+    @media screen and (min-width: 950px) {
+      body {
+        background-color: #E6E6E6;
+      }
+      #syllabus {
+        background-color: white;
+        padding: 50px 90px;
+        box-shadow: 0 0 3px rgba(0,0,0,1);
+        margin: 10px auto;
+        max-width: 750px;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      .letterhead.uofm {
+        display: none;
+      }
+    }
+    @media print {
+      body {
+        font-size: 12px;
+        line-height: 16px;
+        background-color: white;
+        color: #333;
+      }
+      #syllabus {
+        margin: 0px auto;
+      }
+      header {
+        padding-bottom: 10px;
+      }
+      footer {
+        page-break-after: always !important;
+      }
+      section {
+        margin-top: 5px;
+        padding-bottom: 10px;
+      }
+      h2 {
+        padding-bottom: 5px;
+      }
+      img.letterhead {
+        padding-bottom: 15px;
+      }
+      p {
+        padding-bottom: 5px;
+      }
+      ol, ul {
+        padding-bottom: 5px;
+      }
+      a:visited, a:link {
+        color: #333;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="syllabus">
+    <header>
+      <img class="letterhead uofm" src="uofm.jpg" alt="University of Memphis" style="width: 80px"/><img class="letterhead" src="fcbe.jpg" alt="Fogelman College of Business and Economics" style="width: 190px"/>
+      <div>Course Syllabus</div>
+      <h1>ACCT 2010 003 &ndash; Fundamentals of Accounting I</h1>
+      <div>Summer Term, 2020</div>
+      <div>3.0 Credit Hours</div>
+    </header>
+
+    <section id="instructor">
+      <h2 style="padding-bottom: initial">Instructor: Joshua Coyne, Ph.D., CISA</h2>
+      <div class="table">
+        <div class="row">
+          <div class="cell">Email:</div>
+          <div class="cell">jgcoyne@memphis.edu</div>
+        </div>
+        <div class="row">
+          <div class="cell">Office:</div>
+          <div class="cell">FAB 221</div>
+        </div>
+      </div>
+      <div>Office Hours: By appointment</div>
+    </section>
+
+    <section>
+      <div id="covid">
+      <h2>COVID-19 Notice</h2>
+      <p><strong>Please visit the <a href="https://www.memphis.edu/fcbe/faculty/covid_19_notice.php" target="_blank" rel="noopener" aria-label="Website opens in new window">Fogelman College of Business and Economics COVID-19 Notice page</a> in order to verify that you understand and will adhere to the College's policies on student accommodation, healthy and safety on campus, classroom conduct, and reporting procedures.</strong></p>
+      <p><strong>Because of limitations due to COVID-19, this course will NOT meet face-to-face as previously planned. Instead, synchronous meetings will be held over Zoom during scheduled class time or by appointment for office hours. Not all scheduled class periods will have a synchronous Zoom meeting. The time and URL for each Zoom meeting will be communicated in advance via email or via eCourseware.</strong></p>
+      </div>
+      <hr>
+      <div id="description">
+      <h2>Course Overview</h2>
+      <p>Accounting is often referred to as the language of business. The purpose of accounting is to provide meaningful financial information to individuals and institutions that have an interest in business, whether they are investors, creditors or managers. Most Americans today invest in business through the stock market. Intelligent investors seek out financial information on companies to make more informed investment decisions. It is a company’s accounting system that creates and provides the information used by investors. Business managers likewise need information produced through accounting in making the day-to-day operational decisions that improve a company’s performance and profitability. If you hope to become a successful investor or manager or simply want a better understanding of your own financial situation, you will need to understand accounting information to improve your decision-making.</p>
+      <p><b>Before you continue, you must read this syllabus <em>in its entirety</em>. Do not assume that the information in this syllabus does not apply to you. This syllabus represents a contract between you and me. Your participation in this course signifies that you have read and accepted every instruction and policy described in this syllabus.</b></p>
+      </div>
+
+      <h3>Required Materials:</h3>
+      <h4>myBusinessCourse (+ print textbook or ebook)</h4>
+      <p>This course will use the 4th edition of Cambridge Business Press's Financial Accounting for Undergraduates by Wallace, Nelson, and Christensen. This textbook has an accompanying online learning and assessment tool: myBusinessCourse. myBusinessCourse administers all assignments for this course. You can acquire a myBusinessCourse access code in the print textbook through the bookstore or directly using this <a href="https://mybusinesscourse.com/?code=1014-9401-2789" target="_blank" rel="noopener" aria-label="Website opens in new window">enrollment link</a>. <a href="https://support.cambridgepub.com/support/solutions/articles/240922-purchase-options-and-enrollment-ebook-access-code-" target="_blank" rel="noopener" aria-label="Website opens in new window">This guide</a> explains how to use the enrollment link to gain access to myBusinessCourse if you already have an access code or how to acquire an access code if you want to use the ebook or a used print textbook. If you purchase ebook access through this enrollment link, you will also receive a myBusinessCourse access code, just as you would if you purchased a new print textbook, but you will not receive ebook access just for purchasing a myBusinessCourse access code via this enrollment link. You must purchase both the textbook (either print or ebook) and myBusinessCourse access for this course. <strong>The only approved resources for this course are myBusinessCourse and the textbook. Use of any other resource constitutes cheating. See <a href="#integrity">below</a> for more information regarding academic dishonesty.</strong></p>
+      <h4>ProctorU</h4>
+      <p>All online exams in the School of Accountancy are video proctored. For this course, ProctorU will provide video proctoring for the exams. ProctorU is an online proctoring service that allows you to take your exam from home. You will be responsible for signing up with ProctorU and for paying the fee to take each exam. You will need to schedule your proctoring session at least 72 hours in advance to avoid any on demand scheduling fees. In order to create a ProctorU account, if you do not already have one, visit <a href="https://go.proctoru.com/registrations" target="_blank" rel="noopener" aria-label="Website opens in new window">https://go.proctoru.com/registrations</a> and select the &ldquo;Test-Taker&rdquo; option.</p>
+      <p>Please review the <a href="https://www.proctoru.com/live-plus-resource-center" target="_blank" rel="noopener" aria-label="Website opens in new window">Student Resource Page</a> to prepare yourself and your workspace for your exam session. ProctorU encourages students to log in to their accounts and test their equipment at least one hour prior to their scheduled sessions. Simply click on &ldquo;Test your Equipment&rdquo; to make sure your computer and network connection are optimal for exam proctoring. In order to use ProctorU you will need to have a computer running Windows or macOS, a high-speed Internet connection, a webcam (internal or external), and a government-issued photo ID. Please note Chromebooks are not compatible. In order to prevent connectivity issues, please ensure that your Internet connection is not being used for gaming or streaming movies or music during your exam. If you have any issues, please contact a ProctorU live technician.</p>
+
+      <h3 style="page-break-before: always">Course Objectives:</h3>
+      <p>After completion of this course, students should be able to:</p>
+      <ol>
+        <li>Explain fundamental accounting concepts, the elements of financial statements, and basic accounting vocabulary.</li>
+        <li>Explain and use the accounting equation in basic financial analysis and explain how the equation is related to the financial statements.</li>
+        <li>Prepare basic entries for business transactions and present the data in an accurate and meaningful manner.</li>
+        <li>Prepare basic financial statements and explain the articulation between the basic statements.</li>
+        <li>Prepare and interpret basic financial data.</li>
+        <li>Explain the issues of ethics in financial accounting reporting.</li>
+        <li>Explain the basic features of accounting and reporting by organizations, including the principles underlying the design, integrity, and effectiveness of information systems.</li>
+      </ol>
+      <h3>Fogelman College: Learning Outcomes for Your Degree</h3>
+      <p>This course is designed to help you to meet the overall learning objectives for a BBA degree offered by the Fogelman College. The Fogelman College has established the following learning goals for all students successfully completing a BBA degree:</p>
+      <ul>
+        <li>Graduates will be effective communicators.</li>
+        <li>Graduates will demonstrate critical thinking skills.</li>
+        <li>Graduates will be knowledgeable about ethical factors in the business environment.</li>
+        <li>Graduates will be knowledgeable about the global business environment.</li>
+        <li>Graduates will be proficient users of business presentation and analysis technology.</li>
+      </ul>
+    </section>
+
+    <section id="deliverables">
+      <h2>Grading and Evaluation Criteria</h2>
+      <div id="grades">
+      <h3>Final Grades:</h3>
+      <p>I will assign final grades according to the following scale:</p>
+      <div class="table bordered">
+        <div class="row header centered">
+          <div class="cell">Point Range</div><div class="cell">Grade</div>
+        </div>
+        <div class="row centered">
+          <div class="cell">&ge;445</div><div class="cell">A</div>
+        </div>
+        <div class="row centered">
+          <div class="cell">395-444</div><div class="cell">B</div>
+        </div>
+        <div class="row centered">
+          <div class="cell">345-394</div><div class="cell">C</div>
+        </div>
+        <div class="row centered">
+          <div class="cell">300-344</div><div class="cell">D</div>
+        </div>
+        <div class="row centered">
+          <div class="cell">&lt;300</div><div class="cell">F</div>
+        </div>
+      </div>
+
+      <h3>Summary of Graded Deliverables:</h3>
+      <div class="table bordered">
+        <div class="row header">
+          <div class="cell">Deliverable</div><div class="cell centered">Max Points</div>
+        </div>
+        <div class="row">
+          <div class="cell">Reading, Flashcards, and Videos</div><div class="cell centered">0</div>
+        </div>
+        <div class="row">
+          <div class="cell">Self-Study</div><div class="cell centered">0</div>
+        </div>
+        <div class="row">
+          <div class="cell">Quizzes</div><div class="cell centered">65</div>
+        </div>
+        <div class="row">
+          <div class="cell">Homework</div><div class="cell centered">130</div>
+        </div>
+        <div class="row">
+          <div class="cell">Exam Prep</div><div class="cell centered">0</div>
+        </div>
+        <div class="row">
+          <div class="cell">Exams</div><div class="cell centered">300</div>
+        </div>
+        <div class="row footer">
+          <div class="cell">Total</div><div class="cell centered">495</div>
+        </div>
+      </div>
+      <p><em>Please note that several deliverables are listed as having 0 points. These deliverables are support activities designed to facilitate and enhance the learning process. Whether you complete some or all of them is your choice, but I provide these elements to help you to succeed. In the following section, I will explain all required and optional activities.</em></p>
+      </div>
+
+      <div id="assignments">
+      <h3>Explanation and Schedule of Deliverables:</h3>
+      <h4>Reading, Flashcards, and Videos</h4>
+      <p>The first task each week is to read the current chapter. You will not receive any points for reading, but it is necessary. You should not assume that you can skip the reading and use the homework assignments to learn the principles. You may read the print textbook or the ebook on myBusinessCourse. Additionally, myBusinessCourse provides a set of flashcards and explanatory videos for each chapter that explain the learning objectives and the review problems.</p>
+      <h4>Self-Study</h4>
+      <p>Self-study assignments are optional. The purpose of self-study is to give you practice answering questions about the current chapter. You can view this practice as preparation for the quizzes and the homework assignments. You may attempt each self-study assignment as many times as you desire.</p>
+      <h4>Quizzes</h4>
+      <p>Quizzes test your understanding of the material in each chapter by asking a number of multiple-choice questions. These questions may be conceptual, or they may involve calculations. Each quiz is worth a maximum of 5 points, and you will have one attempt at each quiz. Quizzes are closed-book and closed-note. The use of any unauthorized resource violates the School of Accountancy's policies on academic integrity. See <a href="#integrity">below</a> for more information regarding these policies. I will not extend the deadline of any quiz for any reason. myBusinessCourse reports the due dates for all quizzes.</p>
+      <h4>Homework</h4>
+      <p>Homework assignments provide manual practice to reinforce what you learn from reading the chapter. Each homework assignment is worth 10 points. You should not assume that you can skip reading the chapter and simply use the homework problems to learn the principles. However, after proper reading and study using the ebook or textbook and other required and optional activities, the homework will prepare you for the exam. You may not use any resource other than the ebook (or print textbook) to complete homework assignments. The use of any other resource violates the School of Accountancy's policies on academic integrity. See <a href="#integrity">below</a> for more information regarding these policies. I will not extend the deadline of any homework assignment for any reason. You may complete additional study attempts of each homework assignment. Your grade will be based on your best attempt completed prior to the assignment due date. myBusinessCourse reports the due dates for all homework assignments.</p>
+      <h4>Exam Prep</h4>
+      <p>The exam prep assignments are optional. The purpose of exam prep is to give you additional practice solving multiple choice and workout problems in preparation for the exam. You may attempt each exam prep assignment as many times as you desire.</p>
+      <h4>Exams</h4>
+      <p>This course will have three exams: two midterms and one final. The exams will have multiple choice problems and workout problems. Exam I will cover chapters 1 through 4, and exam II will cover chapters 5 through 9, and the final exam will cover chapters 10 through 13. Each exam will be worth 100 points, and you will have two hours to complete each exam. myBusinessCourse reports all exam dates. You must use ProctorU to video proctor your exam. Any exam that is not proctored will receive a 0.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Course Policies</h2>
+      <div id="email">
+      <h3>Email:</h3>
+      <p>Email to my University of Memphis email address is how you may communicate with me. You should not, under any circumstances, use eCourseware's email function. I will communicate using email, as well, and I will always try to respond to email within 24 hours. However, I will not respond to emails on weekends. Instead, I will answer emails sent on Friday evening, Saturday, or Sunday on Monday.</p>
+      <p>You should always follow these guidelines when drafting any professional email, including when emailing faculty:</p>
+      <ol>
+        <li>Use a proper salutation. Do not use &ldquo;Hello,&rdquo; &ldquo;Hey,&rdquo; &ldquo;Hi,&rdquo; &ldquo;Good morning,&rdquo; &ldquo;Good afternoon,&rdquo; &ldquo;Good evening,&rdquo; or other informal salutations. Addressing the recipient by name (if known) is preferred. Type the recipient's title (&ldquo;Dr.&rdquo;, &ldquo;Mr.&rdquo;, &ldquo;Mrs.&rdquo;, &ldquo;Ms.&rdquo; etc.) and the recipient's last name, followed by a comma, colon, or hyphen. You should never use the recipient's first name unless you have express permission to do so. If you are uncertain which title to use, it is safe to use the title in the recipient's signature block if the recipient has previously emailed you. For professors, use the titles &ldquo;Dr.&rdquo; or &ldquo;Professor&rdquo; followed by the recipient's last name. If you do not know the name of the person you are writing to, use the salutation &ldquo;Dear Sir or Madam:&rdquo; or &ldquo;To whom it may concern:&rdquo;.</li>
+        <li>Introduce yourself in the first paragraph. Explain who you are and why you are writing. When writing to a professor, also explain which class and section you are in. This introduction should be in the first sentence or two of your email. The following is a list of inappropriate reasons for writing an email to me:
+          <ol style="list-style-type: lower-alpha">
+            <li>You should not email me about an assignment on the day that an assignment is due. I will not respond to these emails because it encourages procrastination.</li>
+            <li>You should not email me asking that a deadline be changed, nor should you email me to ask whether you can make up an assignment. The syllabus explains which assignments you can make up and which assignments you cannot make up. I will not change this policy, even for unexpected events. All course deliverables are available well before their deadlines so no unexpected event should prevent you from completing them.</li>
+            <li>You should not email me about your grade. Using your gradebook on eCourseware and the syllabus explanation of deliverables, you can determine your own standing in the course. You should not email me at the end of the semester asking for a higher grade or for special extra credit to raise your grade. I will not raise grades for any reason. You can earn a higher grade by working more diligently during the semester.</li>
+          </ol>
+        </li>
+        <li>Use formal language. Use complete sentences and polite phrasing. Never write emails as you would write text messages. Avoid slang, contractions, emoticons and emojis, profanity, jokes, accusations, and rude or offensive language.</li>
+        <li>Use a proper form of closing. Examples of potential closings include: &ldquo;Sincerely,&rdquo; &ldquo;Respectfully,&rdquo; or &ldquo;Your student,&rdquo; (if emailing a professor) followed by your full name and job title or other signature (if you have one).</li>
+        <li>Proofread your message for content, spelling, and grammar. Do not rely on your email service's spelling or grammar checker. Reading your email aloud or asking someone to proofread it is a great way to catch any typos, mistakes, or unclear phrases.</li>
+      </ol>
+      <p>If you fail to follow these rules when emailing me, I will return your email with directions to rewrite it. For additional information regarding proper email etiquette, please review the <a href="https://www.memphis.edu/fcbe/students/netiquette.php" target="_blank" rel="noopener" aria-label="Website opens in new window">Fogelman College Netiquette Guide</a>.</p>
+      </div>
+
+      <div id="integrity">
+      <h3>Academic Integrity:</h3>
+      <p>The School of Accountancy has zero tolerance for academic dishonesty. All of the following constitute academic dishonesty and will result in a 0 on any affected deliverables and, at the instructor's sole discretion, a failing grade for the course. Failure to report any of these actions also constitutes academic dishonesty and can result in the same penalty:</p>
+      <ol>
+        <li>Using an <em>unapproved</em> resource to complete a graded deliverable, including but not limited to, Course Hero, Chegg, or Quizlet. Approved resources are limited to the textbook and other instructor-provided materials.</li>
+        <li>Using an <em>approved</em> resource to complete a graded deliverable without express permission from the instructor. &ldquo;Open-book&rdquo; authorizes the use of the textbook, and no other resource. &ldquo;Open-note&rdquo; authorizes the use of a student's own notes, and no other resource. &ldquo;Open-note&rdquo; does not authorize the use of prior deliverables (e.g., quizzes, exams, or homework) or feedback from prior deliverables without express permission from the instructor.</li>
+        <li>Sharing any questions or answers on a graded deliverable with another individual.</li>
+        <li>Requesting or receiving any questions or answers on a graded deliverable from another individual.</li>
+        <li>Discussing any aspect of a graded deliverable with another individual without express permission from the instructor.</li>
+        <li>Posting any questions or answers from a deliverable or any content from a textbook, textbook slides, or other publisher or instructor materials to an online resource, including but not limited to, Course Hero, Chegg, or Quizlet, or sharing these with another individual. (NB: This also constitutes illegal copyright infringement.)</li>
+        <li>Completing any exam without the use of an approved proctoring tool, such as ProctorU, without express permission from the instructor.</li>
+      </ol>
+      <p>Students should act with utmost integrity at all times and use sound judgment when engaging in any practices not expressly prohibited. For additional information regarding student conduct, please review the Fogelman College <a href="http://www.memphis.edu/fcbe/students/integrity.php" target="_blank" rel="noopener" aria-label="Website opens in new window">Standards for Academic Integrity</a>.</p>
+      </div>
+
+      <h3>Late Assignments:</h3>
+      <p>I currently have no plans to accept late assignments or to allow makeups.</p>
+
+      <h3>Extra Credit:</h3>
+      <p>I currently have no plans to offer extra credit for this course. If I change my mind, I will announce the opportunity to the entire class. Students should not contact me to ask for opportunities to earn extra credit.</p>
+    </section>
+
+    <section>
+      <h2>Student Services</h2>
+      <p>Please access the <a href="http://www.memphis.edu/fcbe/students/services.php" target="_blank" rel="noopener" aria-label="Website opens in new window">FCBE Student Services</a> website for information regarding:</p>
+      <ul>
+        <li>Resources for students with disabilities</li>
+        <li>Tutoring and other academic assistance</li>
+        <li>Advising services for Fogelman students</li>
+        <li>Technical assistance</li>
+      </ul>
+    </section>
+
+    <section id="accessibility">
+      <h2>Accessibility Assistance</h2>
+      <p>Any student who anticipates physical or academic barriers based on the impact of a disability is encouraged to speak with me privately. Students with disabilities should also contact the campus Disability Resources for Students (DRS) office. DRS coordinates access and accommodations for students with disabilities.</p>
+      <div class="table">
+        <div class="row">
+          <div class="cell">Location:</div>
+          <div class="cell">110 Wilder Tower</div>
+        </div>
+        <div class="row">
+          <div class="cell">Phone:</div>
+          <div class="cell">901.678.2880</div>
+        </div>
+        <div class="row">
+          <div class="cell">Web:</div>
+          <div class="cell"><a href="http://www.memphis.edu/drs/" target="_blank" rel="noopener" aria-label="Website opens in new window">http://www.memphis.edu/drs</a></div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
