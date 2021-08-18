@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Syllabus</title>
+  <meta name="Author" content="Joshua G. Coyne, PhD">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="icon" href="favicon.png" type="image/x-icon" sizes="32x32">
+  <style>
+    /********** Eric Meyer's Reset CSS v2.0 **********/
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+    body {
+      line-height: 1;
+    }
+    ol, ul {
+      list-style: none;
+    }
+    blockquote, q {
+      quotes: none;
+    }
+    blockquote:before, blockquote:after, q:before, q:after {
+      content: '';
+      content: none;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    /********** Set Default HTML Tags ***********/
+    b, strong {
+      font-weight: bold;
+    }
+    i, em {
+      font-style: italic;
+    }
+    ol {
+      list-style-type: decimal;
+    }
+    ul {
+      list-style-type: disc;
+    }
+    a {
+      word-wrap: break-word;
+      text-decoration: none;
+    }
+
+    /********** Set Custom HTML Tags **********/
+    body {
+      font: 16px/19px "Arial", Arial, sans-serif;
+      color: #333;
+      height: 100%;
+      width: 100%;
+    }
+    header {
+      text-align: center;
+      font-weight: bold;
+      padding-bottom: 20px;
+    }
+    :target {
+      background-color: rgba(0,255,0,.15);
+      padding: 10px;
+      margin-left: -10px;
+      margin-right: -10px;
+      box-shadow: 0 0 7px rgba(0,0,0,0.1);
+    }
+    section {
+      margin-top: 10px;
+      padding-bottom: 20px;
+    }
+    h2 {
+      font-size: 17px;
+      font-weight: bold;
+      padding-bottom: 5px;
+      text-decoration: underline;
+    }
+    h3 {
+      font-style: italic;
+      text-decoration: underline;
+    }
+    p {
+      padding-bottom: 10px;
+    }
+    ol {
+      margin-left: 35px;
+      padding-bottom: 10px;
+    }
+    ul {
+      margin-left: 45px;
+      padding-bottom: 10px;
+    }
+    li {
+      padding-bottom: 5px;
+    }
+    li > ol, li > ul {
+      margin-top: 5px;
+      padding-bottom: 0;
+      margin-bottom: -5px;
+    }
+    dl {
+      margin-left: 10px;
+    }
+    dt {
+      font-style: italic;
+    }
+    dd {
+      padding-bottom: 10px;
+      margin-left: 5px;
+    }
+    blockquote {
+      font-style: italic;
+      margin-left: 20px;
+      text-indent: 0;
+      line-height: 23px;
+    }
+
+    /********** Create Style Classes **********/
+    #syllabus {
+      width: 92%;
+      margin: 20px auto;
+    }
+    .letterhead {
+      padding-bottom: 30px;
+    }
+    #instructor {
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+      padding: 10px;
+      border: 1px solid black;
+    }
+    .table {
+      display: table;
+      table-layout: fixed;
+      padding-bottom: 5px;
+    }
+    .table.spaced {
+      padding-bottom: 15px;
+    }
+    .table.spaced > .row > .cell {
+      padding: 4px 2px;
+    }
+    .table.bordered > .row > .cell {
+      border: 2px ridge #eee;
+      padding: 4px 2px;
+    }
+    .row {
+      display: table-row;
+    }
+    .row.header, .row.footer {
+      font-weight: bold;
+    }
+    .cell {
+      display: table-cell;
+    }
+    .cell:first-child {
+      padding-right: 30px;
+    }
+    .cell.centered, .row.centered > .cell {
+      text-align: center;
+      padding-right: initial;
+    }
+    .code {
+      font-weight: bold;
+      font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+    }
+    /********** Media Queries **********/
+    @media screen {
+      body {
+        overflow: auto;
+      }
+      a[target="_blank"]::after {
+        background-image: url('external-link.png');
+        background-size: 13px 13px;
+        display: inline-block;
+        width: 13px;
+        height: 12px;
+        content: "";
+      }
+    }
+    @media screen and (min-width: 950px) {
+      body {
+        background-color: #E6E6E6;
+        text-align: justify;
+      }
+      #syllabus {
+        background-color: white;
+        padding: 50px 90px;
+        box-shadow: 0 0 3px rgba(0,0,0,1);
+        margin: 10px auto;
+        max-width: 750px;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      .letterhead.uofm {
+        display: none;
+      }
+    }
+    @media print {
+      body {
+        font-size: 12px;
+        line-height: 16px;
+        background-color: white;
+        color: #333;
+      }
+      #syllabus {
+        margin: 0px auto;
+      }
+      header {
+        padding-bottom: 10px;
+      }
+      footer {
+        page-break-after: always !important;
+      }
+      section {
+        margin-top: 5px;
+        padding-bottom: 10px;
+      }
+      h2 {
+        padding-bottom: 5px;
+      }
+      img.letterhead {
+        padding-bottom: 15px;
+      }
+      p {
+        padding-bottom: 5px;
+      }
+      ol, ul {
+        padding-bottom: 5px;
+      }
+      a:visited, a:link {
+        color: #333;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="syllabus">
+    <header>
+      <img class="letterhead uofm" src="logo.svg" alt="Truman State University" style="width: 250px"/>
+      <div>Course Syllabus</div>
+      <h1>ACCT 522 &ndash; Advanced Tax</h1>
+      <div>Fall 2020</div>
+      <div></div>
+    </header>
+
+    <section id="instructor">
+      <h2 style="text-decoration: initial">Instructor: Joshua Coyne, Ph.D., CISA</h2>
+      <div class="table">
+        <div class="row">
+          <div class="cell">Email:</div>
+          <div class="cell">jcoyne@truman.edu</div>
+        </div>
+      </div>
+      <div style="text-decoration: underline">Virtual Office Hours</div>
+      <div class="table">
+        <div class="row">
+          <div class="cell">Mon:</div>
+          <div class="cell">10:00 am&ndash;12:00 pm</div>
+        </div>
+        <div class="row">
+          <div class="cell">Tues:</div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell">Wed:</div>
+          <div class="cell">10:00 am&ndash;12:00 pm</div>
+        </div>
+        <div class="row">
+          <div class="cell">Thurs:</div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell">Fri:</div>
+          <div class="cell">10:00 am&ndash;12:00 pm</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Course Description</h2>
+      <p>Study of federal income taxation as applied to regular corporations, S corporations, partnerships, trusts and estates, plus a brief introduction to tax research and federal wealth taxes.</p>
+
+      <h2>Required Materials</h2>
+      <p><span style="font-style: italic">Southwestern Federal Taxation, Comprehensive Volume</span> by Hoffman, Maloney, Raabe, and Young. Depending on when you purchased the textbook, you may have the 2019, 2020, or 2021 edition. I will try to make assessments for all three editions available, so that you can complete assessments based on your textbook edition. However, I will use the 2021 edition in class meetings.</p>
+
+      <h2>Course Learning Objectives</h2>
+      <p>This course will provide you with an overview of the income taxation of regular corporations, partnerships, S corporations, trusts, and estates, as well as an introduction to wealth transfer tax.  After completing this course, you will:</p>
+      <ul>
+        <li>Be familiar with the tax life cycle of a corporation, partnership, and S corporation.</li>
+        <li>Be familiar with tax issues related to trusts and estates.</li>
+        <li>Have the ability to read and interpret the Internal Revenue Code and other sources of tax law.</li>
+      </ul>
+
+      <h2>Student Evaluation</h2>
+      <div class="table spaced">
+        <div class="row header">
+          <div class="cell">Deliverable</div><div class="cell centered">Max Points</div>
+        </div>
+        <div class="row">
+          <div class="cell">Exams (4 @ 17.5% each)</div><div class="cell centered">70%</div>
+        </div>
+        <div class="row">
+          <div class="cell">Homework</div><div class="cell centered">30%</div>
+        </div>
+        <div class="row footer">
+          <div class="cell">Total</div><div class="cell centered">100%</div>
+        </div>
+      </div>
+
+      <h3>Exams:</h3>
+      <p>The course includes four equally weighted examinations. Exam dates and times appear in the Detailed Tentative Schedule portion of this syllabus. Exams will be available during class time on the day reported in the schedule.</p>
+      <p>All exams will be proctored using Proctorio. Proctorio allows students with a webcam, a microphone, and a broadband internet connection to complete their exams while on camera; the service does not use live proctors but instead uses an automated algorithm to report on any exam session irregularities. The service is not free to students. Students may be charged up to $10 per exam in each course (Discounts may occasionally be in effect and are not under the control of Truman). Since this course has more than 2 proctored exams, selecting the "course fee" model instead of the "individual test fee" model when paying for the first exam will result in a price equal to two individual exams. Subsequent exams for that course bear no additional cost.</p>
+      <p>You should set up Proctorio prior to the first exam. These links provide additional information regarding how to prepare your computer:</p>
+      <div><a href="https://proctorio.com/support/setup" target="_blank" rel="noopener" aria-label="Website opens in new window">How to get started</a></div>
+      <div><a href="https://proctorio.com/support/requirements" target="_blank" rel="noopener" aria-label="Website opens in new window">Minimum system requirements</a></div>
+      <div><a href="https://proctorio.com/support" target="_blank" rel="noopener" aria-label="Website opens in new window">Proctorio support</a></div>
+      <div style="padding-bottom: 10px"><a href="https://ltt.truman.edu/files/2020/09/Proctorio-Access-Issues-1.pdf" target="_blank" rel="noopener" aria-label="PDF opens in new window">Proctorio access issues</a></div>
+      <h3>Homework:</h3>
+      <p></p>
+    </section>
+
+    <section>
+      <h2>Class Meeting Policies</h2>
+      <p>Class meetings will be held over Zoom. The Zoom meeting link will be posted on Blackboard, as will a recording of each class meeting. Class meetings should be treated with the same respect as you would a professional business meeting. Professional behavior dictates that you attend class, participate in class, and do not talk when others are talking.</p> 
+
+      <h2>Substantive Interaction</h2>
+      <p>Truman policy and federal regulations require that students demonstrate that they are academically engaged in the courses they take. You must meet this requirement within the first calendar week of the semester. Failure to do so, or to provide an explanation of an extenuating circumstance by that date and time will result in your removal from the course. Under certain circumstances, removal could impact your scholarship eligibility or financial aid. For the purposes of this class, establishing academic engagement requires, at a minimum, that you attend one classroom meeting during the first week.</p>
+
+      <h2>Absence Policy</h2>
+      <p>No student having a sanctioned absence shall be penalized for such absence on account solely of being absent. Nothing in this policy is intended to excuse a student from the responsibility to make up missed work within a reasonable length of time. Students with planned absences should notify me prior to an absence from class. Students with unanticipated absences should notify me as early as possible. Documentation of any absence may be required at my discretion.</p>
+      <p>If you must miss an exam due to a planned sanctioned absence, you will need to pre-arrange a time for you to take the exam.  Otherwise, exams must be taken when scheduled except for unplanned sanctioned absences (which should be scheduled for make-up as soon as possible). Missed quizzes cannot be made up for any reason except in the case of a prolonged, medical absence from the university or other similar situation as determined by me. Late assignments and homework are generally not accepted given the length of time given to complete.</p>
+      <p>Definition of Sanctioned Absences:  Absences of students from scheduled classes will be considered sanctioned for the following listed reasons:</p>
+      <ul>
+        <li>Participation as a representative of the University in a scheduled intercollegiate athletic event.</li>
+        <li>Participation as a representative of the University in a scheduled professional/academic conference, academic competition, or a field trip scheduled as part of a course.</li>
+        <li>Participation as an officer of a University co-curricular organization in a scheduled conference for which participation is mandatory for the student (e.g., a required annual meeting for all presidents of a national student organization).</li>
+        <li>Professional or graduate school interviews as well as professional job interviews that cannot be rescheduled.</li>
+        <li>Health related absences.</li>
+        <li>Absences covered by Truman’s non-discrimination policy (e.g. special religious observances, military commitments).</li>
+        <li>Other situations not specifically noted in this list, but approved by me or the Provost.</li>
+      </ul>
+
+      <h2>Communications</h2>
+      <p>This course will use Blackboard to post class related documents. Class related announcements will either be posted on Blackboard or sent by email to your Truman email address. If you wish to communicate with me, please send me an email to my Truman email account. For emails sent during the work week, my commitment to you is to respond to emails within 24 hours. For emails sent on Friday evening, Saturday, or Sunday, my commitment is to respond on Monday or the next business day.</p>
+
+      <h2>Academic Honesty</h2>
+      <p>Academic integrity is a standard set for this course. Either giving help to or receiving help from anyone else (whether that person is a member of our class or not) is a violation of this policy. Students are expected to complete all of their coursework and assignments individually unless otherwise assigned. Students are expected to work alone on the exams without the use of any outside resources. Students are encouraged to consult each other on homework assignments. Students are expected to be honest in their interactions with the professor. Violations will result in a zero on the offending assignment/exam and may lead to other penalties, including failure of the course.  A student not upholding these expectations is subject to being reported to the Dean of Student Affairs Office and the Vice President for Academic Affairs. If you have any questions, please ask.</p>
+
+      <h2>Emergency Procedures</h2>
+      <p>In each classroom on campus, there is a poster of emergency procedures explaining best practices in the event of an active shooter/hostile intruder, fire, severe weather, bomb threat, power outage, and medical emergency. This poster is also available as a PDF at this link: <a href="https://police.truman.edu/files/2015/12/Emergency-Procedures.pdf" target="_blank" rel="noopener" aria-label="PDF opens in new window">Emergency Procedures</a>. Students should be aware of the classroom environment and note the exits for the room and building. For courses held virtually, please note the exits for the room and building where you are while attending virtually.</p>
+      <p>For more detailed information about emergency procedures, please consult the <a href="https://police.truman.edu/emergency-procedures/academic-buildings/" target="_blank" rel="noopener" aria-label="Website opens in new window">Emergency Guide for Academic Buildings</a>.</p> 
+      <p>This six-minute video provides some basic information on how to react in the event there is an active shooter in your location: <a href="https://police.truman.edu/emergency-procedures/active-shooter/active-shooter-preparedness-video/" target="_blank" rel="noopener" aria-label="Website opens in new window">Active Shooter Preparedness</a>.</p>
+      <p>Truman students, faculty, and staff can sign up for the TruAlert emergency text messaging service via TruView. TruAlert sends a text message to all enrolled cell phones in the event of an emergency at the University. To register, sign in to TruView and click on the "Truman" tab. Click on the registration link in the lower right of the page under the "Update and View My Personal Information" channel on the "Emergency Text Messaging" or "Update Emergency Text Messaging Information" link. During a campus emergency, information will also be posted on the TruAlert website: <a href="http://trualert.truman.edu/" target="_blank" rel="noopener" aria-label="Website opens in new window">http://trualert.truman.edu/</a>.</p>
+
+      <h2>Discrimination and Title IX</h2>
+      <p>Truman State University, in compliance with applicable laws and recognizing its deeper commitment to equity, diversity and inclusion which enhances accessibility and promotes excellence in all aspects of the Truman Experience, does not discriminate on the basis of age, color, disability, national origin, race, religion, retaliation, sex (including pregnancy), sexual orientation, or protected veteran status in its programs and activities, including employment, admissions, and educational programs and activities. Faculty and staff are considered "mandated reporters" and therefore are required to report potential violations of the University’s Anti-Discrimination Policies to the Institutional Compliance Officer.</p>
+      <p>Title IX prohibits sex harassment, sexual assault, intimate partner violence, stalking and retaliation. Truman State University encourages individuals who believe they may have been impacted by sexual or gender-based discrimination to consult with the Title IX Coordinator who is available to speak in depth about the resources and options. Faculty and staff are considered “mandated reporters” and therefore are required to report potential incidents of sexual misconduct that they become aware of to the Title IX Coordinator. For more information on discrimination or Title IX, or to file a complaint contact:</p>
+      <div>Office of Institutional Compliance</div>
+      <div>Violette Hall, Room 1308</div>
+      <div>100 E. Normal Ave</div>
+      <div>Kirksville, MO 63501</div>
+      <div>Phone: (660) 785-4354</div>
+      <div style="padding-bottom: 10px">Email: <a href="mailto:titleix@truman.edu" target="_blank" rel="noopener" aria-label="Website opens in new window">titleix@truman.edu</a></div>
+      <p>The institution’s complaint form is accessible at <a href="https://titleix.truman.edu/make-a-report/" target="_blank" rel="noopener" aria-label="Website opens in new window">https://titleix.truman.edu/make-a-report/</a>.</p>
+
+      <h2>Disability Services</h2>
+      <p>To obtain disability-related academic accommodations students with documented disabilities must contact the course instructor and the Office of Student Access and Disability Services (OSA) as soon as possible. Truman complies with ADA requirements. For additional information, refer to the Office of Student Access and Disability Services website at <a href="http://disabilityservices.truman.edu/" target="_blank" rel="noopener" aria-label="Website opens in new window">(http://disabilityservices.truman.edu/)</a>. You may also contact OSA by phone at (660) 785-4478 or email <a href="mailto:studentaccess@truman.edu" target="_blank" rel="noopener" aria-label="Website opens in new window">studentaccess@truman.edu</a>.</p>
+    </section>
+
+      <div id="schedule">
+      <h2>Detailed Tentative Schedule</h2>
+      <div class="table spaced bordered" style="margin-left: auto; margin-right: auto">
+        <div class="row header">
+          <div class="cell">Week</div>
+          <div class="cell">Date</div>
+          <div class="cell">Topic</div>
+          <div class="cell">Chapter</div>
+          <div class="cell">Deliverable</div>
+        </div>
+        <div class="row">
+          <div class="cell">Wk 1</div>
+          <div class="cell">Tue 8/24</div>
+          <div class="cell">Introduction &amp; Review</div>
+          <div class="cell">Chapter 13</div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell">Thu 8/26</div>
+          <div class="cell">Review</div>
+          <div class="cell">Chapter 14</div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell">Wk 2</div>
+          <div class="cell">Tue 8/31</div>
+          <div class="cell">Homework Review</div>
+          <div class="cell">Chapters 13&ndash;14</div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell">Thu 9/2</div>
+          <div class="cell">Practice Exam</div>
+          <div class="cell">Chapters 13&ndash;14</div>
+          <div class="cell">1st Week Feedback</div>
+        </div>
+        <div class="row">
+          <div class="cell">Wk 3</div>
+          <div class="cell">Tue 9/7</div>
+          <div class="cell">Labor Day</div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell">Thu 9/9</div>
+          <div class="cell"></div>
+          <div class="cell">Chapter 17</div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell">Wk 4</div>
+          <div class="cell">Tue 9/14</div>
+          <div class="cell">Homework Review</div>
+          <div class="cell">Chapter 17</div>
+          <div class="cell">Chapter 17 Homework</div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell">Thu 9/16</div>
+          <div class="cell"></div>
+          <div class="cell">Chapter 18</div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell">Wk 5</div>
+          <div class="cell">Tue 9/21</div>
+          <div class="cell">Homework Review</div>
+          <div class="cell">Chapter 18</div>
+          <div class="cell">Chapter 18 Homework</div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell">Thu 9/23</div>
+          <div class="cell"></div>
+          <div class="cell">Chapter 19</div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell">Wk 6</div>
+          <div class="cell">Tue 9/28</div>
+          <div class="cell"></div>
+          <div class="cell">Chapter 19</div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell">Thu 9/30</div>
+          <div class="cell"></div>
+          <div class="cell">Chapter 19</div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell">Wk 7</div>
+          <div class="cell">Tue 10/5</div>
+          <div class="cell">Homework Review</div>
+          <div class="cell">Chapter 19</div>
+          <div class="cell">Chapter 19 Homework</div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell">Thu 10/7</div>
+          <div class="cell">Exam 1</div>
+          <div class="cell">Chapters 17&ndash;19</div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell">Wk 8</div>
+          <div class="cell">Tue 10/12</div>
+          <div class="cell"></div>
+          <div class="cell">Chapter 20</div>
+          <div class="cell">1st Half Feedback</div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell">Thu 10/14</div>
+          <div class="cell">Midterm Break</div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell">Wk 9</div>
+          <div class="cell">Tue 10/19</div>
+          <div class="cell">Homework Review</div>
+          <div class="cell">Chapter 20</div>
+          <div class="cell">Chapter 20 Homework</div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell">Thu 10/21</div>
+          <div class="cell"></div>
+          <div class="cell">Chapter 21</div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell">Wk 10</div>
+          <div class="cell">Tue 10/26</div>
+          <div class="cell"></div>
+          <div class="cell">Chapter 21</div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell">Thu 10/28</div>
+          <div class="cell"></div>
+          <div class="cell">Chapter 21</div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell">Wk 11</div>
+          <div class="cell">Tue 11/2</div>
+          <div class="cell"></div>
+          <div class="cell">Chapter 21</div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell">Thu 11/4</div>
+          <div class="cell"></div>
+          <div class="cell">Chapter 21</div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell">Wk 12</div>
+          <div class="cell">Tue 11/9</div>
+          <div class="cell">Homework Review</div>
+          <div class="cell">Chapter 21</div>
+          <div class="cell">Chapter 21 Homework</div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell">Thu 11/11</div>
+          <div class="cell">Exam 2</div>
+          <div class="cell">Chapters 20&ndash;21</div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell">Wk 13</div>
+          <div class="cell">Tue 11/16</div>
+          <div class="cell"></div>
+          <div class="cell">Chapter 27</div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell">Thu 11/18</div>
+          <div class="cell"></div>
+          <div class="cell">Chapter 27</div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell">Tue 11/23</div>
+          <div class="cell">Thanksgiving Break</div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell">Thu 11/25</div>
+          <div class="cell">Thanksgiving Break</div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell">Wk 14</div>
+          <div class="cell">Tue 11/30</div>
+          <div class="cell">Homework Review</div>
+          <div class="cell">Chapter 27</div>
+          <div class="cell">Chapter 27 Homework</div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell">Thu 12/2</div>
+          <div class="cell"></div>
+          <div class="cell">Chapter 22</div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell">Wk 15</div>
+          <div class="cell">Tue 12/7</div>
+          <div class="cell">Homework Review</div>
+          <div class="cell">Chapter 22</div>
+          <div class="cell">Chapter 22 Homework</div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell">Thu 12/9</div>
+          <div class="cell">Exam Review</div>
+          <div class="cell">Comprehensive</div>
+          <div class="cell"></div>
+        </div>
+        <div class="row">
+          <div class="cell">Finals</div>
+          <div class="cell"></div>
+          <div class="cell">Final Exam</div>
+          <div class="cell">Comprehensive</div>
+          <div class="cell"></div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <p style="text-align: center; font-weight: bold">This syllabus and schedule are tentative. I reserve the right to make changes at any time with notice to the class.</p>
+  </div>
+</body>
+</html>
