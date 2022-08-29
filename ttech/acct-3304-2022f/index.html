@@ -213,11 +213,6 @@
         max-width: 750px;
       }
     }
-    @media screen and (max-width: 400px) {
-      .letterhead.uofm {
-        display: none;
-      }
-    }
     @media print {
       body {
         font-size: 12px;
@@ -229,7 +224,8 @@
         margin: 0px auto;
       }
       header {
-        padding-bottom: 10px;
+        padding-top: initial;
+        padding-bottom: initial;
       }
       footer {
         page-break-after: always !important;
@@ -249,6 +245,12 @@
       }
       ol, ul {
         padding-bottom: 5px;
+      }
+      #instructor {
+        padding: initial;
+      }
+      .table.spaced {
+        padding-bottom: initial;
       }
       a:visited, a:link {
         color: #333;
@@ -337,7 +339,7 @@
       <p>I have provided the bookstore with the first option (1 semester WileyPLUS + eText access), but either of these options are even cheaper purchased directly from the publisher. If you wish to acquire additional resources (a loose leaf print textbook and/or permanent eText download), you can purchase packages (WileyPLUS + eText access + a loose leaf print textbook and/or permanent eText download) directly from the publisher via Wiley Course Resources.</p>
     </section>
 
-    <section id="deliverables">
+    <section id="deliverables" style="page-break-before: always !important">
       <h2>Course Deliverables</h2>
       <h3>Extra Credit: Adaptive Learning</h3>
       <p>For most chapters, WileyPLUS will provide an adaptive learning assignment to assess your understanding after reading the chapter and before the first lecture on that chapter. You can complete these exercises in WileyPlus for up to 1 extra credit point per chapter. Adaptive learning assignments are graded on completion and are due at 11 am on the day listed in the <a href="#schedule">tentative schedule</a>.</p>
@@ -379,36 +381,40 @@
           <div class="cell">Total</div><div class="cell centered">105%</div>
         </div>
       </div>
-      <div class="table spaced">
-        <div class="row header">
-          <div class="cell centered">Grades*</div>
+      <div style="display: flex; flex-flow: wrap">
+        <div class="table spaced">
+          <div class="row header">
+            <div class="cell centered">Grades*</div>
+          </div>
+          <div class="row">
+            <div class="cell centered">90-100%</div><div class="cell">= A</div>
+          </div>
+          <div class="row">
+            <div class="cell centered">80-89%</div><div class="cell">= B</div>
+          </div>
+          <div class="row">
+            <div class="cell centered">70-79%</div><div class="cell">= C</div>
+          </div>
+          <div class="row">
+            <div class="cell centered">60-69%</div><div class="cell">= D</div>
+          </div>
+          <div class="row">
+            <div class="cell centered">&lt;60%</div><div class="cell">= F</div>
+          </div>
         </div>
-        <div class="row">
-          <div class="cell centered">90-100%</div><div class="cell">= A</div>
-        </div>
-        <div class="row">
-          <div class="cell centered">80-89%</div><div class="cell">= B</div>
-        </div>
-        <div class="row">
-          <div class="cell centered">70-79%</div><div class="cell">= C</div>
-        </div>
-        <div class="row">
-          <div class="cell centered">60-69%</div><div class="cell">= D</div>
-        </div>
-        <div class="row">
-          <div class="cell centered">&lt;60%</div><div class="cell">= F</div>
+        <div style="align-self: flex-end">
+          <p>* Your final grade will be the highest of the following calculations:</p>
+          <ul>
+            <li>(Exam grade / 80) + Extra credit</li>
+            <li>[(Exam grade + Homework grade) / 90] + Extra credit</li>
+            <li>[(Exam grade + Quiz grade) / 90] + Extra credit</li>
+            <li>[(Exam grade + Homework grade + Quiz grade) / 100] + Extra credit</li>
+          </ul>
         </div>
       </div>
-      <p>* Your final grade will be the highest of the following calculations:</p>
-      <ul>
-        <li>(Exam grade / 80) + Extra credit</li>
-        <li>[(Exam grade + Homework grade) / 90] + Extra credit</li>
-        <li>[(Exam grade + Quiz grade) / 90] + Extra credit</li>
-        <li>[(Exam grade + Homework grade + Quiz grade) / 100] + Extra credit</li>
-      </ul>
     </section>
 
-    <section id="schedule">
+    <section id="schedule" style="page-break-before: always !important">
       <h2>Tentative Schedule</h2>
       <div class="table spaced bordered schedule">
         <div class="row header">
