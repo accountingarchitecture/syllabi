@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Syllabus - ACCT 4301</title>
+  <meta name="Author" content="Joshua G. Coyne, PhD">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="icon" href="favicon.png" type="image/x-icon" sizes="32x32">
+  <style>
+    /********** Eric Meyer's Reset CSS v2.0 **********/
+    html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+    body {
+      line-height: 1;
+    }
+    ol, ul {
+      list-style: none;
+    }
+    blockquote, q {
+      quotes: none;
+    }
+    blockquote:before, blockquote:after, q:before, q:after {
+      content: '';
+      content: none;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    /********** Set Default HTML Tags ***********/
+    b, strong {
+      font-weight: bold;
+    }
+    i, em {
+      font-style: italic;
+    }
+    ol {
+      list-style-type: decimal;
+    }
+    ul {
+      list-style-type: disc;
+    }
+    a {
+      word-wrap: break-word;
+      text-decoration: none;
+    }
+
+    /********** Set Custom HTML Tags **********/
+    body {
+      font: 16px/19px "Arial", Arial, sans-serif;
+      color: #333;
+      height: 100%;
+      width: 100%;
+    }
+    header {
+      text-align: center;
+      font-weight: bold;
+      padding-top: 60px;
+      padding-bottom: 20px;
+    }
+    :target {
+      background-color: rgba(0,255,0,.15);
+      padding: 10px;
+      margin-left: -10px;
+      margin-right: -10px;
+      box-shadow: 0 0 7px rgba(0,0,0,0.1);
+    }
+    section {
+      margin-top: 10px;
+      padding-bottom: 5px;
+    }
+    h2 {
+      font-size: 17px;
+      font-weight: bold;
+      padding-bottom: 5px;
+      text-align: center;
+    }
+    h3 {
+      font-style: italic;
+      text-decoration: underline;
+    }
+    p {
+      padding-bottom: 10px;
+    }
+    ol {
+      margin-left: 35px;
+      padding-bottom: 10px;
+    }
+    ul {
+      margin-left: 45px;
+      padding-bottom: 10px;
+    }
+    li {
+      padding-bottom: 5px;
+    }
+    li > ol, li > ul {
+      margin-top: 5px;
+      padding-bottom: 0;
+      margin-bottom: -5px;
+    }
+    dl {
+      margin-left: 10px;
+    }
+    dt {
+      font-style: italic;
+    }
+    dd {
+      padding-bottom: 10px;
+      margin-left: 5px;
+    }
+    blockquote {
+      font-style: italic;
+      margin-left: 20px;
+      text-indent: 0;
+      line-height: 23px;
+    }
+
+    /********** Create Style Classes **********/
+    #syllabus {
+      width: 92%;
+      margin: 20px auto;
+    }
+    .letterhead {
+      padding-bottom: 30px;
+    }
+    #instructor {
+      padding: 10px;
+    }
+    .table {
+      display: table;
+      table-layout: fixed;
+      padding-bottom: 5px;
+    }
+    .table.spaced {
+      padding-bottom: 15px;
+    }
+    .table.spaced > .row > .cell {
+      padding: 4px 2px;
+    }
+    .table.bordered > .row > .cell {
+      border: 2px ridge #eee;
+      padding: 4px 2px;
+    }
+    .row {
+      display: table-row;
+    }
+    .row.header, .row.footer {
+      font-weight: bold;
+    }
+    .cell {
+      display: table-cell;
+    }
+    #instructor .cell:first-child {
+      padding-right: 30px;
+    }
+    .cell.centered, .row.centered > .cell {
+      text-align: center;
+      padding-right: initial;
+    }
+    #instructor .table .row .cell:first-child {
+      font-weight: bold;
+    }
+    #instructor .table .row .cell:first-child::after {
+      content: ":";
+    }
+    .table {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .code {
+      font-weight: bold;
+      font-family: Consolas,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New;
+    }
+    .schedule .row .cell:nth-child(3) {
+      text-align: center;
+    }
+
+    /********** Media Queries **********/
+    @media screen {
+      body {
+        overflow: auto;
+      }
+      a[target="_blank"]::after {
+        background-image: url('external-link.png');
+        background-size: 13px 13px;
+        display: inline-block;
+        width: 13px;
+        height: 12px;
+        content: "";
+      }
+    }
+    @media screen and (min-width: 950px) {
+      body {
+        background-color: #E6E6E6;
+        text-align: justify;
+      }
+      #syllabus {
+        background-color: white;
+        padding: 50px 90px;
+        box-shadow: 0 0 3px rgba(0,0,0,1);
+        margin: 10px auto;
+        max-width: 750px;
+      }
+    }
+    @media print {
+      body {
+        font-size: 12px;
+        line-height: 16px;
+        background-color: white;
+        color: #333;
+      }
+      #syllabus {
+        margin: 0px auto;
+      }
+      header {
+        padding-top: initial;
+        padding-bottom: initial;
+      }
+      footer {
+        page-break-after: always !important;
+      }
+      section {
+        margin-top: 5px;
+        padding-bottom: 10px;
+      }
+      h2 {
+        padding-bottom: 5px;
+      }
+      img.letterhead {
+        padding-bottom: 15px;
+      }
+      p {
+        padding-bottom: 5px;
+      }
+      ol, ul {
+        padding-bottom: 5px;
+      }
+      #instructor {
+        padding: initial;
+      }
+      .table.spaced {
+        padding-bottom: initial;
+      }
+      a:visited, a:link {
+        color: #333;
+      }
+      #schedule {
+        font-size: 10px;
+        line-height: 13px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="syllabus">
+    <header>
+      <h1>ACCT 4301 &ndash; Principles of Auditing</h1>
+      <div>Fall 2022</div>
+      <div class="table spaced">
+        <div class="row">
+          <div class="cell">Section 001:</div>
+          <div class="cell">Room NW204</div>
+          <div class="cell">TTh 02:00 pm&ndash;03:20 pm</div>
+        </div>
+        <div class="row">
+          <div class="cell">Section 002:</div>
+          <div class="cell">Room 00013</div>
+          <div class="cell">TTh 09:30 am&ndash;10:50 am</div>
+        </div>
+        <div class="row">
+          <div class="cell">Section 003:</div>
+          <div class="cell">Room 00013</div>
+          <div class="cell">TTh 12:30 pm&ndash;01:50 pm</div>
+        </div>
+      </div>
+    </header>
+
+    <section id="instructor">
+      <div class="table">
+        <div class="row">
+          <div class="cell">Instructor</div>
+          <div class="cell">Joshua Coyne, Ph.D., CISA</div>
+        </div>
+        <div class="row">
+          <div class="cell">Office</div>
+          <div class="cell">E376</div>
+        </div>
+        <div class="row">
+          <div class="cell">Email</div>
+          <div class="cell">joshua.coyne@ttu.edu</div>
+        </div>
+        <div class="row">
+          <div class="cell">Office Hours</div>
+          <div class="cell">MW 11:00 am&ndash;01:00 pm</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="overview">
+      <h2>Course Overview and Expected Learning Outcomes</h2>
+      <p>Your auditing course plays a unique role in your education. For some of you, this course is a stepping stone toward a CPA certification and a career in public accounting. For others, this course may seem like a detour on your chosen career path or even a hurdle in your way. While I don't want to discourage anyone who has their sights set on a career as a CPA, I do want to broaden everyone's perspective regarding the possible benefits of a good audit education. Fundamentally, auditing is about ethics, professional judgment, and skepticism. It asks the question, &ldquo;Is everything as it seems?&rdquo; The ability to see the business world with a critical eye is beneficial whether your future career is in auditing, tax, bookkeeping, sales, consulting, finance, or even data analytics. The need for ethics and professional skepticism is especially strong amid current and emerging threats to business information and information technology.</p>
+      <p>Believe it or not, the most important element of the business world to view with a critical eye is our own lives, so we will go beyond the subject of financial statement auditing to ask ourselves the question, &ldquo;How will you measure your life?&rdquo; Throughout the semester, we will take a break from the study of auditing to ponder this question.</p>
+      <p>Our study of auditing and how we will measure our lives will rely on five primary elements. (1) Reading the textbook will give you foundational understanding of auditing principles and practices. (2) Completing exercises out of class and cases in class will provide an opportunity to apply what you have read. (3) Watching curated videos will expand your awareness of information technology and control as a uniquely significant target of modern-day audits. (4) Reading a secondary guide will give you insight into how to measure your own life. (5) Discussing together what each student has learned will augment the learning process by leveraging each individual's effort to elevate one another.</p>
+      <p>As unpopular as it might be, learning begins with reading. Whether or not we realize it, most of our learning comes from the written word. Some exceptions exist, such as the IT videos that you will watch and the class discussions that we will have, but these exceptions can never supplant the importance of reading as much as we can. There are no shortcuts in learning. We get out of it what we put into it, so if you haven't already become converted to reading for learning, take a leap of faith and invest in your own self by reading in this course. It will be worth it; I promise.</p>
+    </section>
+
+    <section id="materials">
+      <h2>Materials</h2>
+      <ol>
+        <li><span style="font-style: italic">Auditing &amp; Assurance Services: A Systematic Approach, 12th edition</span> (with Connect access) by Messier, Glover, and Prawitt</li>
+        <li><a href="https://www.pearson.com/store/en-us/pearsonplus/p/9780137503223.html" target="_blank" rel="noopener" aria-label="Website opens in new window"><span style="font-style: italic">Auditing Cases: An Interactive Learning Approach, 7th edition</span> by Beasley, Buckless, Glover, and Prawitt</a></li>
+        <li><span style="font-style: italic">How Will You Measure Your Life?</span> by Christensen, Allworth, and Dillon</li>
+        <li><a href="https://www.udemy.com/course/learn-to-talk-tech/?couponCode=ACCT4301SPRING2023" target="_blank" rel="noopener" aria-label="Website opens in new window">Introduction to Business Information and Technology Udemy Course</a></li>
+      </ol>
+      <p>Because this course has so many required materials, I have tried to provide them as inexpensively as possible. I have negotiated a reduced rate for the <span style="font-style: italic">Auditing &amp; Assurance Services</span> book, and you can get the best price if you purchase the ebook using the Connect URL on Blackboard. The <span style="font-style: italic">Auditing Cases</span> ebook is available for rent on the Pearson+ library, and it is included in your subscription if you already pay for Pearson+ &ldquo;Multi&rdquo;. You can find digital or print copies of <span style="font-style: italic">How Will You Measure Your Life?</span> for under $10 at many book retailers. Finally, since I am the creator of the Udemy course, I am giving discounted access to that, as well.</p>
+    </section>
+
+    <section id="communication">
+      <h2>Communication</h2>
+      <p>I will use Blackboard to post class-related documents and announcements. Announcements posted on Blackboard should automatically forward to your email address. If you wish to communicate with me, please send me an email to my Texas Tech address. For emails sent during the work week, my commitment to you is to respond to emails within 24 hours. For emails sent on Friday evening, Saturday, or Sunday, my commitment is to respond on Monday or the next business day.</p>
+    </section>
+
+    <section id="delivery" style="page-break-before: always !important">
+      <h2>Delivery Method</h2>
+      <p>This course will have two in-person class periods each week. If any class periods must be held asynchronously, I will provide lecture notes, practice, and/or exercise or quiz review for each asynchronous class period to replace whatever would have been covered in class. I will notify you as early as possible if any upcoming class periods will be held asynchronously.</p>
+    </section>
+
+    <section id="grades">
+      <h2>Performance Evaluation</h2>
+      <div style="display: flex; flex-flow: wrap">
+        <div class="table spaced">
+          <div class="row header">
+            <div class="cell">Deliverable</div><div class="cell centered">Max Points</div>
+          </div>
+          <div class="row">
+            <div class="cell">Exams (4 @ 15% each)</div><div class="cell centered">60%</div>
+          </div>
+          <div class="row">
+            <div class="cell">Exercises</div><div class="cell centered">15%</div>
+          </div>
+          <div class="row">
+            <div class="cell">Presentations</div><div class="cell centered">10%</div>
+          </div>
+          <div class="row">
+            <div class="cell">Participation</div><div class="cell centered">15%</div>
+          </div>
+          <div class="row">
+            <div class="cell">Extra Credit</div><div class="cell centered">3%</div>
+          </div>
+          <div class="row">
+            <div class="cell">Bonus Extra Credit</div><div class="cell centered">1%</div>
+          </div>
+          <div class="row footer">
+            <div class="cell">Total</div><div class="cell centered">104%</div>
+          </div>
+        </div>
+        <div class="table spaced">
+          <div class="row header">
+            <div class="cell centered">Grades</div>
+          </div>
+          <div class="row">
+            <div class="cell centered">90-100%</div><div class="cell">= A</div>
+          </div>
+          <div class="row">
+            <div class="cell centered">80-89%</div><div class="cell">= B</div>
+          </div>
+          <div class="row">
+            <div class="cell centered">70-79%</div><div class="cell">= C</div>
+          </div>
+          <div class="row">
+            <div class="cell centered">60-69%</div><div class="cell">= D</div>
+          </div>
+          <div class="row">
+            <div class="cell centered">&lt;60%</div><div class="cell">= F</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="deliverables">
+      <h2>Course Deliverables</h2>
+      <h3>Exams</h3>
+      <p>This course includes four exams. You will complete exams in Blackboard in the Testing Center. Each exam is available from 8:00 am until 5:00 pm on the date reported in the <a href="#schedule">tentative schedule</a>. Exams will cover the same topics as the exercises. Where necessary, I will curve exams upward, but I will never curve any exams downward. We will have no class on exam days.</p>
+      <h3>Exercises</h3>
+      <p>For each ebook chapter, I will identify end-of-chapter exercises that serve to reinforce your understanding of what you read in the <span style="font-style: italic">Auditing &amp; Assurance Services</span> ebook. You will complete these exercises in Connect. Exercises are graded based on accuracy and are due before class on the day listed in the <a href="#schedule">tentative schedule</a>. Exercises are due before class to promote independent learning and to enhance the value of class time. We may discuss any exercises in class and/or during my office hours.</p>
+      <h3>Presentations</h3>
+      <p>Each student will give two group presentations during the semester. The first presentation will be the solution to a case from the <span style="font-style: italic">Auditing Cases</span> ebook. Each group will select one case and will present on the day that case is listed in the <a href="#schedule">tentative schedule</a>. The second presentation will cover an information technology or security topic of your choosing. All groups will give these second presentations at the end of the semester as indicated in the <a href="#schedule">tentative schedule</a>. I will grade presentations according to <a href="presentation-rubric.pdf" target="_blank" rel="noopener" aria-label="PDF opens in new window">this rubric</a>.</p>
+      <h3>Participation</h3>
+      <p>Every student is responsible for learning independently through (1) reading the <span style="font-style: italic">Auditing &amp; Assurance Services</span> ebook and (2) completing exercises. Class sessions also contribute to the collective learning process by providing opportunities to ask questions, discuss readings, and watch presentations. In order to encourage contribution to the collective learning process, part of your grade will be based on your in-class participation. Participation will be evaluated by attendance, in-class quizzes, in-class writing prompts, and/or in-class case discussions. Participation is especially important during student presentations to show respect and support for your classmates.</p>
+      <h3>Extra Credit: SmartBook</h3>
+      <p>For most chapters, I will assign a SmartBook adaptive learning assignment to assess your understanding of the chapter that you read. You can complete these exercises in Connect for up to 1 extra credit point per chapter. SmartBook assignments are graded on completion and are due before class on the day listed in the <a href="#schedule">tentative schedule</a>.</p>
+      <h3>Extra Credit: Communication</h3>
+      <p>I want us to work well together, so I will ask for communication from you during the semester for two reasons. First, I want to get to know you, so I will ask for you to introduce yourself to me in a letter that you will upload to Blackboard. I will not dictate a format for this letter, but I will invite you to use this experience to practice your professional writing skills, so please use correct grammar and spelling and a professional writing style. Second, I value continuous improvement. The purpose of this course is to help you to improve as professionals, but I also want to improve as a teacher, so I will give extra credit for the student evaluations that you provide at the end of the semester. You can complete these assignments for 1 extra credit point each.</p>
+    </section>
+
+    <section id="latepolicy" style="page-break-before: always !important">
+      <h2>Late Policy</h2>
+      <p>The purpose of deadlines is to encourage you to engage in consistent, daily learning and to incentivize you to develop your own understanding prior to class meetings. Accepting late submissions would undermine both of these goals, so you cannot earn points on any late assignments. I will also not offer any makeup days for presentations. In order to earn presentation points, you must present on your scheduled day.</p>
+      <p>You may make up exams under the following conditions. First, if you miss a Testing Center exam and have a doctor's note, you may request to make up the exam in the Testing Center. Second, if you miss a Testing Center exam for any other reason, you may make up one exam in the Testing Center on the exam make-up day listed in the <a href="#schedule">tentative schedule</a>. Making up a Testing Center exam with a doctor's note does not preclude you from using the make-up day to make up another exam, but each student may only make up one single exam on the make-up day.</p>
+    </section>
+
+    <section id="bka">
+      <h2>Business Knowledge Assessment</h2>
+      <p>In this senior-level course, you will be given a multiple-choice Business Knowledge Assessment that measures what you have learned about models, concepts, and theories of business across your B.B.A. program here at the Rawls College of Business. You will take the assessment online and outside of class between March 27 and April 7. This assessment is not part of your grade; it is mandated by Rawls to evaluate the quality of your education. You do not need to study to do well on this assessment, so just read the questions and select your answers carefully.</p>
+      <p style="text-align: center"><a href="https://ttu.az1.qualtrics.com/jfe/form/SV_0cBVADRYelT9D1A" target="_blank" rel="noopener" aria-label="Website opens in new window">Assessment Survey</a></p>
+    </section>
+
+    <section id="statements">
+      <h2>Required and Recommended Syllabus Statements</h2>
+      <div style="display: flex; flex-flow: wrap; justify-content: space-around">
+        <div><a href="https://www.depts.ttu.edu/tlpdc/RequiredSyllabusStatements.php" target="_blank" rel="noopener" aria-label="Website opens in new window">Required Syllabus Statements</a></div>
+        <div><a href="https://www.depts.ttu.edu/tlpdc/RecommendedSyllabusStatements.php" target="_blank" rel="noopener" aria-label="Website opens in new window">Recommended Syllabus Statements</a></div>
+      </div>
+    </section>
+
+    <section id="schedule" style="page-break-before: always !important">
+      <h2>Tentative Schedule*</h2>
+      <div class="table spaced bordered schedule" style="padding-bottom: initial">
+        <div class="row header">
+          <div class="cell">Date</div>
+          <div class="cell">Topic</div>
+          <div class="cell">Material</div>
+          <div class="cell">Due before Class</div>
+          <div class="cell">In Class</div>
+        </div>
+        <div class="row">
+          <div class="cell">Th 1/12</div>
+          <div class="cell">Introduction</div>
+          <div class="cell">A1</div>
+          <div class="cell"></div>
+          <div class="cell">Syllabus</div>
+        </div>
+        <div class="row">
+          <div class="cell">T 1/17</div>
+          <div class="cell">Auditing Environment</div>
+          <div class="cell">A2</div>
+          <div class="cell">A1 EX;A2 SB;A2 EX</div>
+          <div class="cell">Judgment Case</div>
+        </div>
+        <div class="row">
+          <div class="cell">Th 1/19</div>
+          <div class="cell">Internal Audit &amp; SoC</div>
+          <div class="cell">A21;V1</div>
+          <div class="cell">A21 SB;A21 EX</div>
+          <div class="cell">IT Case;V1 QZ</div>
+        </div>
+        <div class="row">
+          <div class="cell" style="font-style: italic; border-right: none">T 1/24</div>
+          <div class="cell" style="font-style: italic; border-left: none; padding-left: 4px; border-right: none">Class Cancelled</div>
+          <div class="cell" style="border-left: none; border-right: none"></div>
+          <div class="cell" style="border-left: none; border-right: none"></div>
+          <div class="cell" style="border-left: none"></div>
+        </div>
+        <div class="row">
+          <div class="cell">Th 1/26</div>
+          <div class="cell">Professional Conduct</div>
+          <div class="cell">A19;V2</div>
+          <div class="cell">A19 SB;A19 EX</div>
+          <div class="cell">Ethics Case;V2 QZ</div>
+        </div>
+        <div class="row">
+          <div class="cell" style="font-weight: bold; border-right: none">T 1/31</div>
+          <div class="cell" style="font-weight: bold; border-left: none; padding-left: 4px; border-right: none">Exam</div>
+          <div class="cell" style="font-weight: bold; border-left: none; border-right: none">A1-2,19,21;V1-2</div>
+          <div class="cell" style="border-left: none; border-right: none"></div>
+          <div class="cell" style="border-left: none"></div>
+        </div>
+        <div class="row">
+          <div class="cell" style="font-style: italic; border-right: none">Th 2/2</div>
+          <div class="cell" style="font-style: italic; border-left: none; padding-left: 4px; border-right: none">Class Cancelled</div>
+          <div class="cell" style="border-left: none; border-right: none"></div>
+          <div class="cell" style="border-left: none; border-right: none"></div>
+          <div class="cell" style="border-left: none"></div>
+        </div>
+        <div class="row">
+          <div class="cell">T 2/7</div>
+          <div class="cell">Audit Planning</div>
+          <div class="cell">A3;V3</div>
+          <div class="cell">A3 SB;A3 EX</div>
+          <div class="cell">Materiality Case;V3 QZ</div>
+        </div>
+        <div class="row">
+          <div class="cell">Th 2/9</div>
+          <div class="cell">Risk Assessment</div>
+          <div class="cell">A4;V4</div>
+          <div class="cell">A4 SB;A4 EX</div>
+          <div class="cell">Ethics Case;V4 QZ</div>
+        </div>
+        <div class="row">
+          <div class="cell">T 2/14</div>
+          <div class="cell">Evidence &amp; Documentation</div>
+          <div class="cell">A5;V5</div>
+          <div class="cell">A5 SB;A5 EX</div>
+          <div class="cell">Analytics Cases;V5 QZ</div>
+        </div>
+        <div class="row">
+          <div class="cell">Th 2/16</div>
+          <div class="cell">Personal Accountability</div>
+          <div class="cell">H1-H3</div>
+          <div class="cell"></div>
+          <div class="cell">Writing Prompt</div>
+        </div>
+        <div class="row">
+          <div class="cell" style="font-weight: bold; border-right: none">T 2/21</div>
+          <div class="cell" style="font-weight: bold; border-left: none; padding-left: 4px; border-right: none">Exam</div>
+          <div class="cell" style="font-weight: bold; border-left: none; border-right: none">A3-5;V3-5</div>
+          <div class="cell" style="border-left: none; border-right: none"></div>
+          <div class="cell" style="border-left: none"></div>
+        </div>
+        <div class="row">
+          <div class="cell">Th 2/23</div>
+          <div class="cell">Internal Control</div>
+          <div class="cell">A6;V6</div>
+          <div class="cell">A6 SB;A6 EX</div>
+          <div class="cell">Case Comparison;V6 QZ</div>
+        </div>
+        <div class="row">
+          <div class="cell">T 2/28</div>
+          <div class="cell">Auditing Internal Control</div>
+          <div class="cell">A7;V7</div>
+          <div class="cell">A7 SB;A7 EX</div>
+          <div class="cell">Control Case;V7 QZ</div>
+        </div>
+        <div class="row">
+          <div class="cell">Th 3/2</div>
+          <div class="cell">Personal Accountability</div>
+          <div class="cell">H4-H5</div>
+          <div class="cell"></div>
+          <div class="cell">Writing Prompt</div>
+        </div>
+        <div class="row">
+          <div class="cell">T 3/7</div>
+          <div class="cell">Audit Sampling</div>
+          <div class="cell">A8;V8</div>
+          <div class="cell">A8 SB;A8 EX</div>
+          <div class="cell">Sampling Case A;V8 QZ</div>
+        </div>
+        <div class="row">
+          <div class="cell" style="font-style: italic; border-right: none">Th 3/9</div>
+          <div class="cell" style="font-style: italic; border-left: none; padding-left: 4px; border-right: none">Early Spring Vacation</div>
+          <div class="cell" style="border-left: none; border-right: none"></div>
+          <div class="cell" style="border-left: none; border-right: none"></div>
+          <div class="cell" style="border-left: none"></div>
+        </div>
+        <div class="row">
+          <div class="cell" style="font-style: italic; border-right: none; border-bottom: none">T 3/14</div>
+          <div class="cell" style="font-style: italic; border-left: none; padding-left: 4px; border-right: none; border-bottom: none">Spring Vacation</div>
+          <div class="cell" style="border-left: none; border-right: none; border-bottom: none"></div>
+          <div class="cell" style="border-left: none; border-right: none; border-bottom: none"></div>
+          <div class="cell" style="border-left: none; border-bottom: none"></div>
+        </div>
+        <div class="row">
+          <div class="cell" style="font-style: italic; border-right: none; border-top: none">Th 3/16</div>
+          <div class="cell" style="font-style: italic; border-left: none; padding-left: 4px; border-right: none; border-top: none">Spring Vacation</div>
+          <div class="cell" style="border-left: none; border-right: none; border-top: none"></div>
+          <div class="cell" style="border-left: none; border-right: none; border-top: none"></div>
+          <div class="cell" style="border-left: none; border-top: none"></div>
+        </div>
+        <div class="row">
+          <div class="cell">T 3/21</div>
+          <div class="cell">Audit Sampling</div>
+          <div class="cell">A9;V9</div>
+          <div class="cell">A9 SB;A9 EX</div>
+          <div class="cell">Sampling Case B;V9 QZ</div>
+        </div>
+        <div class="row">
+          <div class="cell">Th 3/23</div>
+          <div class="cell">Personal Accountability</div>
+          <div class="cell">H6-H7</div>
+          <div class="cell"></div>
+          <div class="cell">Writing Prompt</div>
+        </div>
+        <div class="row">
+          <div class="cell" style="font-weight: bold; border-right: none">T 3/28</div>
+          <div class="cell" style="font-weight: bold; border-left: none; padding-left: 4px; border-right: none">Exam</div>
+          <div class="cell" style="font-weight: bold; border-left: none; border-right: none">A6-9;V6-9</div>
+          <div class="cell" style="border-left: none; border-right: none"></div>
+          <div class="cell" style="border-left: none"></div>
+        </div>
+        <div class="row">
+          <div class="cell">Th 3/30</div>
+          <div class="cell">Revenue Process</div>
+          <div class="cell">A10;V10</div>
+          <div class="cell">A10 SB;A10 EX</div>
+          <div class="cell">Revenue Case;V10 QZ</div>
+        </div>
+        <div class="row">
+          <div class="cell">T 4/4</div>
+          <div class="cell">Purchase Process</div>
+          <div class="cell">A11;V11</div>
+          <div class="cell">A11 SB;A11 EX</div>
+          <div class="cell">Expenditure Case;V11 QZ</div>
+        </div>
+        <div class="row">
+          <div class="cell">Th 4/6</div>
+          <div class="cell">Personal Accountability</div>
+          <div class="cell">H8-H10</div>
+          <div class="cell"></div>
+          <div class="cell">Writing Prompt</div>
+        </div>
+        <div class="row">
+          <div class="cell" style="font-weight: bold; border-right: none">T 4/11</div>
+          <div class="cell" style="font-weight: bold; border-left: none; padding-left: 4px; border-right: none">Exam</div>
+          <div class="cell" style="font-weight: bold; border-left: none; border-right: none">A10-11;V10-11</div>
+          <div class="cell" style="border-left: none; border-right: none"></div>
+          <div class="cell" style="border-left: none"></div>
+        </div>
+        <div class="row">
+          <div class="cell">Th 4/13</div>
+          <div class="cell">Completing the Audit</div>
+          <div class="cell">A17</div>
+          <div class="cell">A17 SB</div>
+          <div class="cell">Presentations</div>
+        </div>
+        <div class="row">
+          <div class="cell">T 4/18</div>
+          <div class="cell">Audit Reports</div>
+          <div class="cell">A18</div>
+          <div class="cell">A18 SB</div>
+          <div class="cell">Presentations</div>
+        </div>
+        <div class="row">
+          <div class="cell">Th 4/20</div>
+          <div class="cell">IT Presentations</div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell">Presentations</div>
+        </div>
+        <div class="row">
+          <div class="cell">T 4/25</div>
+          <div class="cell">IT Presentations</div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell">Presentations</div>
+        </div>
+        <div class="row">
+          <div class="cell" style="font-weight: bold; border-right: none">W 4/26</div>
+          <div class="cell" style="font-weight: bold; border-left: none; padding-left: 4px; border-right: none">Exam Make-up Day</div>
+          <div class="cell" style="border-left: none; border-right: none"></div>
+          <div class="cell" style="border-left: none; border-right: none"></div>
+          <div class="cell" style="border-left: none"></div>
+        </div>
+        <div class="row">
+          <div class="cell">Th 4/27</div>
+          <div class="cell">IT Presentations</div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell">Presentations</div>
+        </div>
+        <div class="row">
+          <div class="cell">T 5/2</div>
+          <div class="cell">Last Day of Classes</div>
+          <div class="cell"></div>
+          <div class="cell"></div>
+          <div class="cell">Presentations</div>
+        </div>
+      </div>
+      <div class="table">
+        <div class="row">
+          <div class="cell">*</div>
+          <div class="cell">A:</div>
+          <div class="cell"><span style="font-style: italic">Auditing &amp; Assurance Services</span></div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell">V:</div>
+          <div class="cell">Introduction to Business Information and Technology Udemy Course video</div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell">H:</div>
+          <div class="cell"><span style="font-style: italic">How Will You Measure Your Life?</span></div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell">SB:</div>
+          <div class="cell">Connect SmartBook</div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell">EX:</div>
+          <div class="cell">Connect Exercises</div>
+        </div>
+        <div class="row">
+          <div class="cell"></div>
+          <div class="cell">QZ:</div>
+          <div class="cell">Quiz</div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
