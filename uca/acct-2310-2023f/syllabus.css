@@ -1,0 +1,19 @@
+body {
+  width: 640px;
+  margin-right: auto;
+  margin-left: auto;
+}
+p.MsoTitle {
+  margin-left: 0in;
+}
+div.WordSection1 {
+  page: initial;
+}
+div.WordSection2 {
+  page: initial;
+}
+@media screen {
+  body {
+    transform: scale(1.5);
+    transform-origin: top;
+}
